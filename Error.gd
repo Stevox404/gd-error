@@ -4,12 +4,13 @@
 # Version: 1.0.0
 # Description: Generic GDScript Error Logging tool 
 # Usage: 
-#  + Error.new(err_msg: String, is_fatal:= false, err_name:= "Error")
+#  + GDError.new(err_msg: String, is_fatal:= false, err_name:= "Error")
 #  + Only err_msg is required. All others are optional
 
 class_name GDError
 
 #TODO Find how to make this var static
+#TODO can class have multiple constructors?
 var stack_trace := true 
 
 var err_name: String
